@@ -22,7 +22,7 @@ app.get("/", (req: Request, res: Response) => {
   });
 });
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log("server listening at: ", PORT);
 });
